@@ -6,9 +6,13 @@ import numpy as np
 import os, shutil
 
 # palette (color map) describes the (R, G, B): Label pair
-palette = {(0,   0,   0) : 0 ,
-         (192,  128, 128) : 1 #person
-         }
+palette = {
+	(0, 0, 0): 0,
+	(1, 1, 1): 0,
+	(0, 192, 128): 1,
+	(128, 192, 128): 2,
+	(128, 64, 128): 3
+}
 
 def convert_from_color_segmentation(arr_3d):
     arr_2d = np.zeros((arr_3d.shape[0], arr_3d.shape[1]), dtype=np.uint8)
