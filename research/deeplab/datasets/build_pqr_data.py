@@ -65,7 +65,9 @@ from six.moves import range
 
 FLAGS = tf.app.flags.FLAGS
 
-tf.app.flags.DEFINE_string('image_folder', './PQR/JPEGImages', 'Folder containing images.')
+tf.app.flags.DEFINE_string(
+	'image_folder', './PQR/JPEGImages', 'Folder containing images.'
+)
 
 tf.app.flags.DEFINE_string(
 	'semantic_segmentation_folder', './PQR/SegmentationClassRaw',
@@ -73,7 +75,8 @@ tf.app.flags.DEFINE_string(
 )
 
 tf.app.flags.DEFINE_string(
-	'list_folder', './PQR/ImageSets', 'Folder containing lists for training and validation'
+	'list_folder', './PQR/ImageSets',
+	'Folder containing lists for training and validation'
 )
 
 tf.app.flags.DEFINE_string(

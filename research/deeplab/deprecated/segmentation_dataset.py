@@ -112,9 +112,9 @@ _ADE20K_INFORMATION = DatasetDescriptor(
 
 _PQR_INFORMATION = DatasetDescriptor(
     splits_to_sizes={
-      'train': 3512,
-      'val': 703,
-      'trainval': 4215,
+      'train': 12,
+      'val': 5,
+      'trainval': 17,
     },
     num_classes=4,
     ignore_label=255,
